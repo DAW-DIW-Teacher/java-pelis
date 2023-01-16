@@ -4,6 +4,9 @@
 # Log file
 *.log
 
+#
+src/main/resources/settings.properties
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/

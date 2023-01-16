@@ -45,6 +45,7 @@ public class Main extends Application {
             alerta.setTitle("Error al leer el fichero de configuración");
             alerta.setContentText("ERROR: No se ha podido leer el contenido del fichero " + ficheroConfiguracion );
             alerta.showAndWait();
+            System.exit(1);
         }
     }
 
@@ -59,6 +60,7 @@ public class Main extends Application {
             alerta.setTitle("Error no se ha podido conectar a la base de datos");
             alerta.setContentText("ERROR: No se ha podido conectar a la base de datos  " + config.getProperty("MONGODB_DATABASE") );
             alerta.showAndWait();
+            System.exit(2);
         }
 
 

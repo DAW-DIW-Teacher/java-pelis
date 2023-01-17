@@ -27,8 +27,8 @@ public class Main extends Application {
         cargarConfiguracion(FICHERO_CONFIGURACION,configuracion);
         contectarBaseDeDatos(configuracion);
 
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("MainView.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("peliculasView.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(),800,600);
         stage.setTitle("Información de peliculas");
         stage.setResizable(false);
         stage.setScene(scene);
